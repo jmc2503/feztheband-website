@@ -1,0 +1,976 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/stars.gif);
+    background-repeat: repeat;
+    background-size: 50vh;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: baseline;
+    margin-left: 10px;
+    margin-top: 0px;
+    padding: 0px;
+    color: white;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:visited {
+    color: white;
+}
+
+#globe {
+    transform: rotateZ(10deg);
+    margin-right: 10px;
+}
+
+header #fez {
+    margin: 0;
+    display: inline-block;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+}
+
+header #worldwide {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+header #com {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .4em;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: blue;
+}
+
+/* NAV BAR */
+nav {
+    margin-left: 30px;
+    align-items: baseline;
+    color: white;
+    background-color: black;
+    transform: skew(-10deg, 0);
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove bullets */
+    margin: right;
+    padding: 0;
+    display: flex;
+    /* Display list items in a row */
+    align-items: baseline;
+}
+
+nav ul li {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: white;
+    /* Link color */
+    font-size: 1.3em;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+    text-decoration-color: yellow;
+    font-weight: 1000;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+/* MAIN BODY */
+.main-stuff {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.block {
+    padding-bottom: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.column-small {
+    flex: 0 0 25%;
+    max-width: 25%;
+
+}
+
+.column-big {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.column-big h1 #news {
+    color: red;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.column-big h1 #headline {
+    color: rgb(0, 38, 255);
+    font-style: normal;
+    font-size: 1em;
+}
+
+.questTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandcampSong {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    border: none;
+}
+
+#bandcampIcon {
+    border: 5px solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+#bandcampPromotion {
+    border: 10px solid red;
+    width: 350px;
+    height: 588px;
+
+}
+
+.video {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#musicvideo {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.choice {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-weight: 1000;
+    font-size: 2em;
+}
+
+.wizard {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    object-fit: contain;
+
+}
+
+.wizard img {
+    max-width: 30%;
+    max-height: fit-content;
+    transform: rotateY(180deg);
+}
+
+#questbooks {
+    width: 5%;
+    height: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+#huzzah {
+    font-style: italic;
+    color: red;
+    font-weight: 1000;
+    flex-grow: 1;
+    font-size: 500%;
+
+}
+
+#questInfo {
+    color: green;
+}
+
+#questTask {
+    color: green;
+}
+
+.chooseAdventure {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* THIS IS FOR THE AD*/
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 50px;
+    transition: opacity 2s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.image-container .ad {
+    border: 7px solid;
+    border-top: 25px solid;
+    border-color: blue;
+    max-width: 75%;
+    height: auto;
+}
+
+#pastor {
+    border-color: blue;
+}
+
+#two {
+    border-color: blue;
+    max-width: 75%;
+    height: auto;
+}
+
+#kman {
+    border-color: blue;
+}
+
+.x-out {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px outset black;
+    transform: translate(-125%, 10%);
+}
+
+.x-out:hover {
+    cursor: pointer;
+}
+
+.x-out:active {
+    background-color: grey;
+}
+
+.image-container .sticker {
+    position: absolute;
+    transform: rotateZ(20deg);
+    top: 30%;
+    left: 55%;
+    animation: pulse 1s linear infinite;
+
+}
+
+#glasses {
+    position: absolute;
+    top: 85%;
+    left: 18%;
+    color: yellow;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: 1000;
+    font-size: 1.35em;
+    text-shadow: 2px 2px black;
+}
+
+#prescriptions {
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lime;
+    top: 30%;
+    left: 20%;
+    font-weight: 1000;
+    font-size: 1em;
+    text-shadow: 0px 0px 4px black;
+}
+
+#prescriptions span {
+    display: inline-block;
+    animation: liftDrop 2s ease-in-out forwards infinite;
+    transform-origin: bottom;
+}
+
+#callfez {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 85%;
+    left: 20%;
+    color: lime;
+    font-weight: 1000;
+    text-shadow: 1px 1px 1px black;
+    animation: 5s scale infinite linear;
+}
+
+#fezvertical {
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1000;
+    font-size: 3em;
+    color: red;
+    top: 35%;
+    left: 17%;
+
+    text-shadow:
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+}
+
+#ketchup {
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1000;
+    color: red;
+    font-size: 2em;
+    top: 85%;
+    left: 30%;
+
+    text-shadow:
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+}
+
+#wow {
+    position: absolute;
+    transform: rotateZ(25deg);
+    top: 60%;
+    left: 65%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    animation: spin 4s linear infinite;
+    text-shadow: 2px 2px black;
+
+}
+
+#or {
+    position: absolute;
+    font-weight: 1000;
+    color: red;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 3px black;
+    top: 83%;
+    left: 17%;
+}
+
+#question {
+    position: absolute;
+    font-weight: 1000;
+    font-size: 1.3em;
+    color: gold;
+    top: 24%;
+    left: 17%;
+    text-shadow: 1px 1px 3px black;
+}
+
+#questionMark {
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: 1000;
+    color: red;
+    text-shadow: 1px 1px 3px black;
+    top: 80%;
+    left: 70%;
+}
+
+#hell {
+    position: absolute;
+    transform: scale(0.6);
+    top: 72%;
+    left: 18%;
+}
+
+#heaven {
+    position: absolute;
+    transform: scale(0.4);
+    top: 23%;
+    left: 4%;
+}
+
+#hotSingles {
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    font-weight: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: hotpink;
+    text-shadow: 1px 1px 1px black;
+    animation: 3s scale infinite linear;
+}
+
+#heart {
+    position: absolute;
+    font-size: 3em;
+    color: hotpink;
+    top: 50%;
+    left: 70%;
+    transform: rotateZ(0deg);
+    text-shadow: 1px 1px black;
+    animation: 2s spin2 infinite linear;
+
+}
+
+#heart2 {
+    position: absolute;
+    font-size: 3em;
+    color: hotpink;
+    top: 70%;
+    left: 20%;
+    transform: rotateZ(0deg);
+    text-shadow: 1px 1px black;
+    animation: 2s spin2 infinite linear;
+
+}
+
+#hostDown {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    font-size: 0.9em;
+    color: white;
+    text-shadow: -1px -1px 1px black, 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+    font-weight: 1000;
+}
+
+#uhoh {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 1.8em;
+    font-weight: 1000;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 1px black;
+    animation: 0.5s scale infinite linear;
+}
+
+#they {
+    position: absolute;
+    width: 40%;
+    top: 55%;
+    left: 12%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: 1s scale infinite reverse linear;
+}
+
+#offer {
+    position: absolute;
+    width: 70%;
+    top: 23%;
+    left: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+    animation: glow 1s infinite alternate;
+}
+
+#whatisit {
+    position: absolute;
+    top: 83%;
+    left: 55%;
+    font-weight: bold;
+    animation: 5s spin2 infinite linear;
+    color: white;
+    text-shadow: 1px 1px 5px green;
+
+}
+
+#clickhere {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: rotateZ(20deg);
+}
+
+#fez .breaking-news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#news {
+    text-decoration: underline;
+    text-decoration-color: red;
+    animation: 2.5s blinkUnderline infinite linear;
+}
+
+#tame {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    font-weight: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: yellow;
+}
+
+#mantext {
+    animation: 5s rainbow linear infinite;
+}
+
+#croatianFlag {
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    transform: rotateZ(-20deg);
+}
+
+/* COUNTDOWN TIMER */
+
+.launch-time {
+    display: flex;
+    justify-content: center;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+}
+
+.launch-time div p {
+    font-size: 60px;
+}
+
+/* FOOTER */
+
+footer {
+    position: sticky;
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bookus {
+    flex: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5px;
+}
+
+#bookus a {
+    text-decoration: underline;
+    color: white;
+}
+
+#bookus a:hover {
+    color: grey;
+}
+
+
+
+footer .logos {
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+footer .logos a {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.icon {
+    color: white;
+}
+
+.icon:hover {
+    color: grey;
+}
+
+.icon:active {
+    color: black;
+}
+
+.footer-space {
+    flex: 1;
+}
+
+
+
+footer .logos:hover,
+footer .logos:visited {
+    color: black;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main-stuff {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.5em;
+    }
+
+    body {
+        margin-top: 10px;
+    }
+
+    .header-content #fez {
+        font-size: 1.2em;
+    }
+
+    .header-content #worldwide {
+        font-size: 0.5em;
+    }
+
+    .header-content #globe {
+        width: 40px;
+    }
+
+    .image-container .ad {
+        border: 5px solid;
+        border-top: 15px solid;
+        border-color: blue;
+        max-width: 75%;
+        height: auto;
+    }
+
+    .x-out {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 1px outset black;
+        transform: translate(-125%, 10%);
+        font-size: 0.7em;
+    }
+
+
+    .column-small,
+    .column-big {
+        width: 100%;
+        /* Make each column full width */
+        margin: 5px 0;
+        /* Adjust margin for spacing */
+    }
+
+    #glasses {
+        font-size: 0.9em;
+        top: 85%;
+        left: 19%;
+    }
+
+    .gridText {
+        font-size: 2em;
+    }
+
+    .image-container .sticker {
+        width: 30px;
+        top: 50%;
+        left: 53%;
+    }
+
+    #prescriptions {
+        font-size: 0.65em;
+        top: 50%;
+        left: 18%;
+
+    }
+
+    #callfez {
+        font-size: 0.8em;
+    }
+
+    #uhoh {
+        font-size: 1.2em;
+        top: 47%;
+        left: 20%;
+    }
+
+    #hostDown {
+        font-size: 0.78em;
+        top: 70%;
+    }
+
+    #offer {
+        font-size: 0.8em;
+        top: 45%;
+    }
+
+    #whatisit {
+        left: 30%;
+    }
+
+    #hotSingles {
+        font-size: 0.8em;
+        top: 50%;
+        left: 10%;
+    }
+
+    #fezvertical {
+        font-size: 2.2em;
+        top: 45%;
+        left: 22%;
+    }
+
+    #ketchup {
+        font-size: 1.5em;
+    }
+
+    #bandcampPromotion {
+        width: 100%;
+        height: auto;
+    }
+
+    #question {
+        top: 44%;
+        left: 18%;
+    }
+
+    #heaven {
+        width: 120px;
+        height: auto;
+        top: 41%;
+        left: -13%;
+    }
+
+    #hell {
+        width: 100px;
+        height: auto;
+        top: 70%;
+        left: 10%;
+
+    }
+
+    #they {
+        font-size: 0.9em;
+    }
+
+    #clickhere {
+        width: 25px;
+    }
+
+    #or {
+        font-size: 1.2em;
+    }
+
+    #bookus {
+        font-size: 0.8em;
+    }
+
+    #huzzah {
+        font-size: 3em;
+    }
+
+    .chooseAdventure {
+        display: block;
+    }
+
+    .block {
+        padding-bottom: 10px;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .wizard img {
+        width: 50%;
+    }
+
+    .launch-time div p {
+        font-size: 4em;
+    }
+
+    #copyright {
+        font-size: 0.8em;
+    }
+
+    #croatianFlag {
+        width: 25px;
+        top: 47%;
+        left: 25%;
+    }
+
+    #tame {
+        font-size: .7em;
+    }
+
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: auto;
+        padding: 10px;
+        width: auto;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        float: right;
+    }
+
+    .nav-links li {
+        text-align: right;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        padding: 0;
+    }
+
+
+}
+
+@keyframes pulse {
+    50% {
+        transform: rotateZ(20deg) scale(1.1);
+    }
+}
+
+@keyframes liftDrop {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes spin {
+    50% {
+        transform: rotateZ(25deg) rotateX(180deg);
+    }
+
+    100% {
+        transform: rotateZ(25deg) rotateX(360deg);
+    }
+}
+
+@keyframes blinkUnderline {
+
+    0%,
+    50%,
+    100% {
+        text-decoration-color: red;
+        /* Underline visible */
+    }
+
+    25%,
+    75% {
+        text-decoration-color: transparent;
+        /* Underline hidden */
+    }
+}
+
+@keyframes scale {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes spin2 {
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #33ff00, 0 0 20px #2ddc01c0, 0 0 30px #22a7014d, 0 0 40px #1463002a, 0 0 50px #0a2d0106;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #33ff00, 0 0 30px #33ff00, 0 0 40px #33ff00, 0 0 50px #33ff00;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+
+    16.67% {
+        color: orange;
+    }
+
+    33.33% {
+        color: yellow;
+    }
+
+    50% {
+        color: green;
+    }
+
+    66.67% {
+        color: blue;
+    }
+
+    83.33% {
+        color: indigo;
+    }
+
+    100% {
+        color: violet;
+    }
+}

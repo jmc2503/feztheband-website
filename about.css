@@ -1,0 +1,77 @@
+main {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+main h1 {
+    color: red;
+}
+
+main p {
+    font-size: 1.2em;
+}
+
+.imageClass {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    position: relative;
+}
+
+#carter {
+    float: left;
+}
+
+#jimmyC {
+    max-width: 200px;
+}
+
+#wisconsin {
+    float: right;
+}
+
+#wisconsinID {
+    max-width: 75%;
+}
+
+#seafood {
+    float: right;
+
+}
+
+#seafoodID {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#fuzz {
+    float: left;
+}
+
+#fuzzID {
+    width: 200px;
+    height: auto;
+}
+
+#burntHouse {
+    width: 300px;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.redCircle {
+    top: 0%;
+    left: 11%;
+    width: 75%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid red;
+    position: absolute;
+}

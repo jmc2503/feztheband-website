@@ -1,0 +1,47 @@
+main {
+    text-align: center;
+}
+
+.firstBlock img {
+    display: inline-block;
+}
+
+.firstBlock h1 {
+    display: inline-block;
+    color: yellow;
+}
+
+#slow {
+    animation: 10s scaleSlow infinite linear;
+    position: relative;
+    display: inline-block;
+    transform-origin: center;
+    color: red;
+}
+
+#pasture {
+    color: green;
+}
+
+#grazing {
+    color: brown;
+}
+
+#construction {
+    width: 70%;
+    height: auto;
+}
+
+.bottomBlock p {
+    display: inline;
+}
+
+footer {
+    position: absolute;
+}
+
+@keyframes scaleSlow {
+    50% {
+        font-size: 1.3em;
+    }
+}
