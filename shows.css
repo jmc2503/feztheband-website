@@ -23,3 +23,7 @@ main a:hover {
 .showItem {
     height: 75px;
 }
+
+footer{
+    position: absolute;
+}
