@@ -652,6 +652,109 @@ footer .logos:visited {
     color: black;
 }
 
+@media(min-width: 1400px){
+
+    #glasses{
+        font-size: 2em;
+    }
+
+    .image-container .sticker {
+        width: 125px;
+        top: 30%;
+        left: 58%;
+    }
+
+    #prescriptions {
+        font-size: 1.5em;
+        top: 30%;
+        left: 18%;
+
+    }
+
+    #callfez {
+        font-size: 1.6em;
+    }
+
+    #uhoh {
+        font-size: 3em;
+        top: 27%;
+        left: 20%;
+    }
+
+    #hostDown {
+        font-size: 1.5em;
+        top: 74%;
+    }
+
+    #offer {
+        font-size: 2em;
+        top: 15%;
+    }
+
+    #whatisit {
+        font-size: 1.5em;
+    }
+
+    
+    #hotSingles {
+        font-size: 1.5em;
+        top: 25%;
+        left: 19%;
+    }
+
+    #fezvertical {
+        font-size:4em;
+        top: 30%;
+        left: 17%;
+    }
+
+    #ketchup {
+        font-size: 3em;
+    }
+
+    #question {
+        font-size: 2em;
+        top: 20%;
+        left: 18%;
+    }
+
+    #heaven {
+        width: 300px;
+        height: auto;
+        top: 20%;
+        left: 10%;
+    }
+
+    #hell {
+        width: 300px;
+        height: auto;
+        top: 70%;
+        left: 20%;
+
+    }
+
+    #they {
+        font-size: 1.5em;
+        left: 15%;
+        top: 40%;
+    }
+
+    #clickhere {
+        width: 100px;
+    }
+
+    #tame{
+        font-size: 1.5em;
+    }
+
+    #croatianFlag{
+        width: 110px;
+    }
+
+
+
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .main-stuff {
