@@ -8,9 +8,19 @@ main a:hover {
     text-decoration: underline;
 }
 
+.monthLabel {
+    display: flex;
+    justify-content: baseline;
+}
+
 .month {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.monthGif {
+    width: 50px;
+    height: auto;
 }
 
 .monthTitle {
@@ -18,12 +28,41 @@ main a:hover {
     font-weight: 1000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: underline;
+    justify-content: baseline;
 }
 
 .showItem {
     height: 75px;
 }
 
-footer{
+.showPic {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#fezTicket {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 400px;
+    height: auto;
+    transform: rotateZ(20deg);
+    z-index: -1;
+    overflow: hidden;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+@media(max-width: 768px) {
+    #fezTicket {
+        width: 300px;
+    }
 }
