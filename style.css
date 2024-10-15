@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'bloodlust';
+    src: url('/fonts/bloodlust.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-image: url(images/stars.gif);
     background-repeat: repeat;
@@ -573,7 +580,7 @@ nav ul li a:hover {
 
 #fezfeldlogo {
     position: absolute;
-    width: 150px;
+    width: 50%;
     top: 75%;
     left: 35%;
 }
@@ -592,6 +599,30 @@ nav ul li a:hover {
 
 #feztv {
     color: gold;
+}
+
+#realtext {
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    font-family: "bloodlust", sans-serif;
+    font-size: 2.5em;
+    color: red;
+    animation: expandGlow 2s infinite linear;
+}
+
+#phonetext {
+    width: 150px;
+    position: absolute;
+    font-weight: 1000;
+    left: 13%;
+    top: 55%;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#phoneScale {
+    color: white;
 }
 
 /* COUNTDOWN TIMER */
@@ -1073,6 +1104,20 @@ footer .logos:visited {
 
     100% {
         text-shadow: 0 0 20px #33ff00, 0 0 30px #33ff00, 0 0 40px #33ff00, 0 0 50px #33ff00;
+    }
+}
+
+@keyframes expandGlow {
+    0% {
+        text-shadow: 0px 0px 5px darkred;
+    }
+
+    50% {
+        text-shadow: 0px 5px 5px darkred;
+    }
+
+    100% {
+        text-shadow: 0 10px 5px darkred;
     }
 }
 
