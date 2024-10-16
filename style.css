@@ -18,6 +18,11 @@ body {
     color: white;
 }
 
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 /* HEADER */
 header {
     background-color: black;
@@ -624,6 +629,7 @@ nav ul li a:hover {
 
 #phoneScale {
     color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 /* COUNTDOWN TIMER */
