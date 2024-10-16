@@ -129,6 +129,7 @@ main {
     font-weight: 1000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4em;
+    text-align: center;
 }
 
 #projectTitle a {
@@ -187,7 +188,11 @@ main {
     }
 
     .sectionTitle {
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+
+    main div {
+        padding-bottom: 10px;
     }
 
     #projectTitle {

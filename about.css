@@ -75,3 +75,22 @@ main p {
     border: 3px solid red;
     position: absolute;
 }
+
+.contactPage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactPage input {
+    margin-top: 5px;
+    width: 200px;
+    border: none;
+    height: 35px;
+    border: 5px solid white;
+}
+
+.contactPage textarea {
+    width: 200px;
+    height: 100px;
+
+}

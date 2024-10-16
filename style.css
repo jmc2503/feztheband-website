@@ -586,6 +586,7 @@ nav ul li a:hover {
 }
 
 #fezfeldtext {
+    width: 45%;
     position: absolute;
     color: pink;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -608,7 +609,7 @@ nav ul li a:hover {
     font-family: "bloodlust", sans-serif;
     font-size: 2.5em;
     color: red;
-    animation: expandGlow 2s infinite linear;
+    animation: expandGlow 2s infinite alternate;
 }
 
 #phonetext {
@@ -810,7 +811,7 @@ footer .logos:visited {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .main-stuff {
         flex-direction: row;
         justify-content: space-between;
@@ -1000,6 +1001,25 @@ footer .logos:visited {
 
     #tame {
         font-size: .7em;
+    }
+
+    #fezfeldtext {
+        font-size: .86em;
+        top: 49%;
+        left: 20%;
+    }
+
+    #realtext {
+        font-size: 1.5em;
+        top: 50%;
+        left: 25%;
+    }
+
+    #phonetext {
+        font-size: 0.7em;
+        width: 50%;
+        top: 70%;
+        left: 18%;
     }
 
 
