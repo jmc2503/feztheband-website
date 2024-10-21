@@ -56,6 +56,15 @@ main a:hover {
     overflow: hidden;
 }
 
+#frog {
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 0%;
+    transform: rotateZ(-15deg);
+    height: auto;
+}
+
 footer {
     position: sticky;
     bottom: 0;
