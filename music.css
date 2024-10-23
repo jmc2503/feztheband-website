@@ -147,6 +147,10 @@ main {
     color: rgb(176, 66, 176);
 }
 
+#t1 a:link {
+    color: rgb(176, 66, 176);
+}
+
 #t1 a:visited {
     color: rgb(176, 66, 176);
 }
@@ -156,6 +160,11 @@ main {
     grid-row: 1;
     color: grey;
 }
+
+#t2 a:link {
+    color: grey;
+}
+
 
 #t2 a:visited {
     color: grey;
@@ -167,6 +176,11 @@ main {
     color: orange
 }
 
+#t3 a:link {
+    color: orange;
+}
+
+
 #t3 a:visited {
     color: orange;
 }
@@ -176,6 +190,11 @@ main {
     grid-row: 3;
     color: yellow;
 }
+
+#t4 a:link {
+    color: yellow;
+}
+
 
 #t4 a:visited {
     color: yellow;

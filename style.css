@@ -192,6 +192,11 @@ nav ul li a:hover {
 
 }
 
+.gridText {
+    color: green;
+    font-weight: 1000;
+}
+
 .video {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -208,6 +213,7 @@ nav ul li a:hover {
     grid-row: 2 / 3;
     font-weight: 1000;
     font-size: 2em;
+    color: green;
 }
 
 .wizard {
@@ -241,11 +247,11 @@ nav ul li a:hover {
 }
 
 #questInfo {
-    color: green;
+    color: red;
 }
 
 #questTask {
-    color: green;
+    color: red;
 }
 
 .chooseAdventure {
@@ -441,8 +447,8 @@ footer .logos:visited {
     }
 
     .image-container .ad {
-        border: 5px solid;
-        border-top: 15px solid;
+        border: 2px solid;
+        border-top: 10px solid;
         border-color: blue;
         max-width: 75%;
         height: auto;
@@ -450,11 +456,11 @@ footer .logos:visited {
 
     .x-out {
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 7px;
+        height: 7px;
         border: 1px outset black;
-        transform: translate(-125%, 10%);
-        font-size: 0.7em;
+        transform: translate(-125%, 20%);
+        font-size: 0.5em;
     }
 
 
@@ -477,8 +483,13 @@ footer .logos:visited {
     }
 
     #bandcampPromotion {
-        width: 100%;
-        height: auto;
+        width: 200px;
+        height: 300px;
+        border: 3px solid red;
+    }
+
+    #questInfo {
+        display: none;
     }
 
     #bookus {
