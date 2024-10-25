@@ -100,6 +100,8 @@
                     </a>
                     <button class="x-out" id="hideButton">X</button>
                 </div>
+
+                <p style="padding-top: 10px">psst...hey kid click --> <a href="blog.html">here</a></p>
             </div>
             <div class="column-big">
                 <div class="block">
@@ -217,9 +219,7 @@
                 <div class="image-container">
                     <a href="https://www.youtube.com/watch?v=2Cm8yCfdc6A" target="_blank">
                         <img class="ad" src="adGifs/crazyBass.gif" alt="Top 10 Bass Player">
-                        <!-- <img class="ad" id="bassPlayer" src="images/bassTricks.png" alt="Top 10 Bass Player">
-                        <p id="they">TOP 10 CRAZZZY BASS TRICKS (REAL)</p>
-                        <img id="clickhere" src="images/clickhere.gif" alt="Click here dude"> -->
+                        <!-- HEY WHAT ARE YOU DOING LOOKING AROUND HERE??? -->
                     </a>
                     <button class="x-out" id="hideButton">X</button>
                 </div>
@@ -251,6 +251,8 @@
         <br>
     </main>
 
+
+    <!-- Here is the footer, there are many like it but this one is mine -->
     <footer>
         <p id="bookus">BOOK US: <a href="mailto:feztheband69@gmail.com" target="_blank">feztheband69@gmail.com</a></p>
         <div class="logos">
@@ -288,21 +290,6 @@
             document.getElementById("minutes").innerHTML = minutes;
             document.getElementById("seconds").innerHTML = seconds;
         }, 1000);
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const text = document.getElementById('prescriptions');
-            const letters = text.textContent.split('');
-            text.textContent = ''; // Clear the original text
-
-            letters.forEach((letter, index) => {
-                const span = document.createElement('span');
-                span.textContent = letter === ' ' ? '\u00A0' : letter;
-                span.style.animationDelay = `${index * 0.1}s`; // Staggered delay
-                span.style.opacity = "1"; // Make the letter visible
-                text.appendChild(span);
-            });
-        });
 
         const buttons = document.querySelectorAll('.x-out');
 

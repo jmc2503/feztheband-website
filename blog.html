@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fez Band</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/f28e0b4e6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/globe.gif" alt="Spinning Globe Gif" id="globe">
+            <h1><a href="index.html"><span id="fez">Fez</span><span id="worldwide">THEBAND</span><span
+                        id="com">.com</span></a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="gamez.html">Gamez!!</a></li>
+                    <li><a href="about.html">About Fez</a></li>
+                </ul>
+
+                <div class="hamburger">&#9776;</div>
+            </nav>
+        </div>
+
+        <hr>
+    </header>
+
+    <main>
+        <h1>Welcome to Fez Blog</h1>
+        <h3>Enter the Fezverse</h3>
+        <div class="blog-container">
+            <div class="date" onclick="toggleEntry('entry1')">October 15, 2024</div>
+            <div id="entry1" class="blog-entry">
+                <p>Hello this is my fiRst blog post thank you for coming</p>
+            </div>
+
+            <div class="date" onclick="toggleEntry('entry2')">October 16, 2024</div>
+            <div id="entry2" class="blog-entry">
+                <p>Hell-o this is my second blog post thank you for coming</p>
+            </div>
+
+            <!-- Add more dates and entries as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <p id="bookus">BOOK US: <a href="mailto:feztheband69@gmail.com" target="_blank">feztheband69@gmail.com</a></p>
+        <div class="logos">
+            <a href="https://www.instagram.com/fez.worldwide/" target="_blank" class="icon"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@fez.worldwide" target="_blank" class="icon"><i
+                    class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@feztheband69?app=desktop" target="_blank" class="icon"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/4P3H6Mtpk64LrymsodCckT?si=sbOuXphOQcGWA_br4np-fg" target="_blank"
+                class="icon"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+        <div class="footer-space"></div>
+    </footer>
+
+    <script src="hamburger.js"></script>
+
+    <script>
+        function toggleEntry(id) {
+            var entry = document.getElementById(id);
+            if (entry.style.display === "block") {
+                entry.style.display = "none";
+            } else {
+                entry.style.display = "block";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
