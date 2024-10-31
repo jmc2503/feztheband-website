@@ -13,6 +13,26 @@ main a:hover {
     justify-content: baseline;
 }
 
+.beg {
+    width: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+.beg a {
+    background-color: yellow;
+}
+
+.beg span {
+    color: red;
+    font-weight: 1000;
+}
+
+.beg span #grow {
+    animation: grow 2s linear infinite;
+}
+
 .month {
     margin-left: 10%;
     margin-right: 10%;
@@ -66,12 +86,18 @@ main a:hover {
 }
 
 footer {
-    position: sticky;
+    position: absolute;
     bottom: 0;
 }
 
 @media(max-width: 768px) {
     #fezTicket {
         width: 300px;
+    }
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1.1);
     }
 }

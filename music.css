@@ -38,9 +38,11 @@ main {
 
 .singleSection {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    max-width: 100%;
 }
 
 .singleItem p {
