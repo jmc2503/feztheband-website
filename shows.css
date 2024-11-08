@@ -51,6 +51,15 @@ main a:hover {
     justify-content: baseline;
 }
 
+.none {
+    display: flex;
+    color: white;
+}
+
+.none h3 {
+    background-color: red;
+}
+
 .showItem {
     height: 75px;
 }
