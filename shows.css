@@ -36,6 +36,7 @@ main a:hover {
 .month {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 20px;
 }
 
 .monthGif {
@@ -88,7 +89,7 @@ main a:hover {
 #frog {
     position: absolute;
     width: 20%;
-    top: 30%;
+    top: 70%;
     left: 0%;
     transform: rotateZ(-15deg);
     height: auto;

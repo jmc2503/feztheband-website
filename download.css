@@ -1,0 +1,61 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+}
+
+#psp {
+    width: 60%;
+    margin: 50px;
+}
+
+.download-btn {
+    display: block;
+    padding: 2% 5%;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "comic sans ms", arial;
+    border: 3px solid green;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+#arrow {
+    width: 10%;
+    left: 35%;
+    top: 60%;
+    position: absolute;
+    transform: rotateZ(-45deg);
+    animation: pulse-forward 1.5s infinite linear;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+@keyframes pulse-forward {
+    0% {
+        transform: scale(1) translateX(0) rotateZ(-45deg);
+        /* Initial state */
+    }
+
+    50% {
+        transform: scale(1.1) translateX(10px) rotateZ(-45deg);
+        /* Pulse forward */
+    }
+
+    100% {
+        transform: scale(1) translateX(0) rotateZ(-45deg);
+        /* Return to initial state */
+    }
+}
