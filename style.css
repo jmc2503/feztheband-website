@@ -323,10 +323,20 @@ nav ul li a:hover {
     animation: 2.5s blinkUnderline infinite linear;
 }
 
+#green {
+    color: green;
+}
+
+#red {
+    color: red;
+}
+
 #leesta {
     width: 75%;
     height: auto;
-    border: 5px solid yellow;
+    border: 5px solid green;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
 }
 
 
