@@ -36,10 +36,6 @@ main {
     display: inline;
 }
 
-footer {
-    position: absolute;
-}
-
 @keyframes scaleSlow {
     50% {
         font-size: 1.3em;
