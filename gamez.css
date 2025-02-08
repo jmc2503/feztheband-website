@@ -36,6 +36,15 @@ main {
     display: inline;
 }
 
+iframe {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 800px;
+    width: 600px;
+    border: none;
+}
+
 @keyframes scaleSlow {
     50% {
         font-size: 1.3em;
