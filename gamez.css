@@ -1,5 +1,21 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Prevent scrollbars */
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     text-align: center;
+    flex: 1;
+    /* Takes up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .firstBlock img {
@@ -36,13 +52,34 @@ main {
     display: inline;
 }
 
-iframe {
-    margin-top: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    height: 800px;
+.game-wrapper {
+    position: relative;
     width: 600px;
+    /* Original game width */
+    height: 800px;
+    /* Original game height */
+}
+
+.game-container {
+    width: 100%;
+    height: 100%;
+    transform-origin: top center;
+    position: absolute;
+    top: 0;
+    transform: scale(1);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
     border: none;
+}
+
+/* Responsive scaling */
+@media (max-width: 768px) {
+    .game-container {
+        left: -20%;
+    }
 }
 
 @keyframes scaleSlow {

@@ -37,9 +37,14 @@
 
     <main>
 
-        <iframe src="FlappySplingo/index.html"></iframe>
+        <div class="game-wrapper">
+            <div class="game-container" id="game">
+                <iframe src="FlappySplingo/index.html"></iframe>
+            </div>
+        </div>
 
-        <div class="firstBlock">
+
+        <!-- <div class="firstBlock">
             <img src="images/gamez/cowboy.gif">
             <h1>Whoaaaa <span id="slow">slow</span> down there partner!</h1>
             <img src="images/gamez/cowboy.gif">
@@ -51,10 +56,10 @@
         <div class="bottomBlock">
             <img src="images/gamez/construction2.gif" id="construction2">
             <p>pardon our dust</p>
-        </div>
+        </div> -->
     </main>
 
-    <footer>
+    <!-- <footer>
         <p id="bookus">BOOK US: <a href="mailto:feztheband69@gmail.com" target="_blank">feztheband69@gmail.com</a></p>
         <div class="logos">
             <a href="https://www.instagram.com/fez.worldwide/" target="_blank" class="icon"><i
@@ -67,9 +72,36 @@
                 class="icon"><i class="fa-brands fa-spotify"></i></a>
         </div>
         <div class="footer-space"></div>
-    </footer>
+    </footer> -->
 
     <script src="hamburger.js"></script>
+
+
+    <script>
+        function scaleGame() {
+            const gameContainer = document.getElementById('game');
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const availableHeight = window.innerHeight - headerHeight;
+            const availableWidth = window.innerWidth;
+
+            const gameOriginalWidth = 600;
+            const gameOriginalHeight = 800;
+
+            // Calculate scaling factors for width and height
+            const scaleWidth = availableWidth / gameOriginalWidth;
+            const scaleHeight = availableHeight / gameOriginalHeight;
+
+            // Use the smaller scaling factor to maintain aspect ratio
+            const scale = Math.min(scaleWidth, scaleHeight);
+
+            // Apply the scaling
+            gameContainer.style.transform = `scale(${scale})`;
+        }
+
+        // Run the scaling function on load and resize
+        window.addEventListener('load', scaleGame);
+        window.addEventListener('resize', scaleGame);
+    </script>
 
 
 </body>
