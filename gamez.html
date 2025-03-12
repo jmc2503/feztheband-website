@@ -41,6 +41,10 @@
             <iframe src="FlappySplingo/index.html"></iframe>
         </div>
 
+        <div class="game-text">
+            <a href="">Click to Read Flappy Splingo Lore</a>
+        </div>
+
 
 
         <!-- <div class="firstBlock">
@@ -80,7 +84,8 @@
         function scaleGame() {
             const gameContainer = document.getElementById('game');
             const headerHeight = document.querySelector('header').offsetHeight;
-            const availableHeight = window.innerHeight - headerHeight;
+            const textHeight = document.querySelector('.game-text').offsetHeight;
+            const availableHeight = window.innerHeight - headerHeight - textHeight;
             const availableWidth = window.innerWidth;
 
             const gameOriginalWidth = 600;

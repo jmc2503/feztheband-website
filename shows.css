@@ -94,6 +94,10 @@ main a:hover {
     height: auto;
 }
 
+footer {
+    position: fixed;
+}
+
 
 @media(max-width: 768px) {
     #fezTicket {
