@@ -162,27 +162,23 @@ a #lyricspage {
     object-fit: cover;
 }
 
-#dancingF {
-    height: auto;
-    width: auto;
+.fezimage {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    /* space between letters */
+    width: 100%;
 }
 
-#dancingE {
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    z-index: -1;
-    width: 10%;
+.fezimage img {
+    width: 45px;
+    /* 3 × 45px = 135px + 2 gaps = ~150px */
     height: auto;
+    object-fit: contain;
 }
 
-#dancingZ {
-    position: absolute;
-    top: 20%;
-    left: 80%;
-    z-index: -1;
-    width: 10%;
-    height: auto;
+.discography-grid .album img:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
