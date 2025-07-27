@@ -12,6 +12,10 @@ main {
     text-align: left;
 }
 
+.article{
+    margin-bottom: 20px;
+}
+
 #eventimage {
     width: 60%;
     margin-left: 5%;

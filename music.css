@@ -177,6 +177,14 @@ a #lyricspage {
     object-fit: contain;
 }
 
+.clickbait {
+    position: absolute;
+    pointer-events: none;
+    background: blue;
+    padding: 3px;
+    font-size: 70%;
+}
+
 .discography-grid .album img:hover {
     transform: scale(1.05);
 }
