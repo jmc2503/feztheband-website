@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fez Band</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/music.css">
     <link rel="icon" href="images/icon.png" type="image/png">
     <script src="https://kit.fontawesome.com/f28e0b4e6c.js" crossorigin="anonymous"></script>
 
@@ -34,144 +34,145 @@
 
 <body>
 
-    <header>
-        <div class="header-content">
-            <img src="images/globe.gif" alt="Spinning Globe Gif" id="globe">
-            <h1><a href="index.html"><span id="fez">Fez</span><span id="worldwide">THEBAND</span><span
-                        id="com">.com</span></a></h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="music.html">Music</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a href="gamez.html">Gamez!!</a></li>
-                    <li><a href="about.html">About Fez</a></li>
-                </ul>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/globe.gif" alt="Spinning Globe Gif" id="globe">
+                <h1><a href="index.html"><span id="fez">Fez</span><span id="worldwide">THEBAND</span><span
+                            id="com">.com</span></a></h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="shows.html">Shows</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="gamez.html">Gamez!!</a></li>
+                        <li><a href="about.html">About Fez</a></li>
+                    </ul>
 
-                <div class="hamburger">&#9776;</div>
-            </nav>
-        </div>
+                    <div class="hamburger">&#9776;</div>
+                </nav>
+            </div>
 
-        <hr>
-    </header>
+            <hr>
+        </header>
 
-    <main>
-        <h1>LISTEN TO FEZ</h1>
+        <main>
+            <h1>LISTEN TO FEZ</h1>
 
-        <h3>CHOOSE YOUR <span class="platform" id="plat">PLATFORM</span></h3>
+            <h3>CHOOSE YOUR <span class="platform" id="plat">PLATFORM</span></h3>
 
-        <div class="menu">
-            <button id="spotifyBtn" class="active" onclick="updateLinks('spotify')">Spotify <i
-                    class="fa-brands fa-spotify"></i></button>
-            <button id="youtubeBtn" onclick="updateLinks('youtube')">YouTube <i
-                    class="fa-brands fa-youtube"></i></button>
-            <button id="appleBtn" onclick="updateLinks('apple')">Apple Music <i class="fa-brands fa-apple"></i></button>
-        </div>
+            <div class="menu">
+                <button id="spotifyBtn" class="active" onclick="updateLinks('spotify')">Spotify <i
+                        class="fa-brands fa-spotify"></i></button>
+                <button id="youtubeBtn" onclick="updateLinks('youtube')">YouTube <i
+                        class="fa-brands fa-youtube"></i></button>
+                <button id="appleBtn" onclick="updateLinks('apple')">Apple Music <i class="fa-brands fa-apple"></i></button>
+            </div>
 
-        <div class="image-row" id="albumRow">
-            <div class="album">
-                <a id="link1" href="https://open.spotify.com/album/4ZuqGYlylKdVJ1S76Nb61T?si=g7-mG8suT4qSY3HLawcqGQ"
-                    target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Mud' });"><img
-                        src="images/covers/mud.JPG" alt="Mud"></a>
-                <p class="caption">Mud</p>
-            </div>
-            <div class="album">
-                <a id="link2" href="https://open.spotify.com/album/3PGcIK8hRE6bM3t9UmxcKK?si=VVGiesvzS1ePHoUYgjlugg"
-                    target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Costume Contest' });"><img
-                        src="images/covers/costumeContest.jpg" alt="Costume Contest"></a>
-                <p class="caption">SPOOKY SONG</p>
-            </div>
-            <div class="album">
-                <a id="link3" href="https://open.spotify.com/album/1c3ATXfc1pUXfEcm4tnGsw?si=NEj_UA43QDSBnpY6pLZJqw"
-                    target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Hole' });"><img
-                        src="images/covers/hole.jpg" alt="Hole"></a>
-                <p class="caption">Hole</p>
-            </div>
-            <div class="album">
-                <a id="link4" href="https://open.spotify.com/playlist/38b4h7FuXc930nPB4Yxqhu?si=ddddad36e10d4138"
-                    target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'This is Fez' });"><img id="img4"
-                        src="images/covers/thisisfez.JPG" alt="Fez Playlist"></a>
-                <p class="caption" id="caption_four">THIS IS FEZ (PLAYLIST)</p>
-            </div>
-        </div>
-
-        <h2 id="full">FULL DISCOGRAPHY</h2>
-
-        <div class="discography-grid">
-            <div class="album">
-                <a id="link5" href="https://open.spotify.com/album/1kEfsb0JKD0tT2mhHtrFCl?si=TbTeftEwR4OeEzIBxf9fmw"
-                    target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Fez After Dark' });"><img
-                        src="images/covers/afterDark.jpg" alt="After Dark"></a>
-                <p class="caption">Fez After Dark</p>
-            </div>
-            <div class="album">
-                <a id="link6" href="https://open.spotify.com/album/7ifFaE3y1LdojFFQ9yRwIj?si=r-tN_PHEQ6OMdNsp5gOHow"
-                    target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Mime Motoring' });"><img
-                        src="images/covers/mimeMotoring.jpg" alt="Mime Motoring"></a>
-                <p class="caption">Mime Motoring</p>
-            </div>
-            <div class="album">
-                <a id="link7" href="https://open.spotify.com/album/5VSjm4ng1YdC2n6Zlwgk2f?si=nbIboxwuQB2bjDey_bUwSA"
-                    target="_blank"
-                    onclick="fbq('trackCustom', 'AlbumClick', { album: 'This is the Summertime' });"><img
-                        src="images/covers/summerTime.jpg" alt="This is the Summertime"></a>
-                <p class="caption">This is the Summertime</p>
-            </div>
-            <div class="album">
-                <a id="link8" href="https://open.spotify.com/album/766cTckNCwhTFM7GbRBJkq?si=RsC4Qk1ESPmLOgyb9pfMpg"
-                    target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Glowing Ghouls' });"><img
-                        src="images/covers/GlowingGhouls.jpg" alt="fezman and the Glowing Ghouls"></a>
-                <p class="caption">Fezman And The Glowing Ghouls</p>
-            </div>
-            <div class="album">
-                <a id="link9" href="https://open.spotify.com/album/5VbnLwtDCwGsSD5SnMSvVA?si=xmb-sYlDQEqy3kb5_Z9f5g"
-                    target="_blank"><img src="images/covers/fezmas.jpg" alt="Fezmas"></a>
-                <p class="caption">Paper People / Fezmas</p>
-            </div>
-            <div class="album">
-                <a id="link10" href="https://open.spotify.com/album/4ZuqGYlylKdVJ1S76Nb61T?si=g7-mG8suT4qSY3HLawcqGQ"
-                    target="_blank"><img src="images/covers/mud.JPG" alt="Mud"></a>
-                <p class="caption">Mud</p>
-            </div>
-            <div class="album">
-                <a id="link11" href="https://open.spotify.com/album/3PGcIK8hRE6bM3t9UmxcKK?si=VVGiesvzS1ePHoUYgjlugg"
-                    target="_blank"><img src="images/covers/costumeContest.jpg" alt="Costume Contest"></a>
-                <p class="caption">Abandoned at the Costume Contest</p>
-            </div>
-            <div class="album">
-                <a id="link12" href="https://open.spotify.com/album/1c3ATXfc1pUXfEcm4tnGsw?si=NEj_UA43QDSBnpY6pLZJqw"
-                    target="_blank"><img src="images/covers/hole.jpg" alt="Hole"></a>
-                <p class="caption">Hole / They're Alive</p>
-            </div>
-            <div class="album">
-                <div class="fezimage">
-                    <img src="images/dancingF.gif" alt="Dancing F">
-                    <img src="images/dancingE.gif" alt="Dancing E">
-                    <img src="images/dancing Z.gif" alt="Dancing Z">
+            <div class="image-row" id="albumRow">
+                <div class="album">
+                    <a id="link1" href="https://open.spotify.com/album/4ZuqGYlylKdVJ1S76Nb61T?si=g7-mG8suT4qSY3HLawcqGQ"
+                        target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Mud' });"><img
+                            src="images/covers/mud.JPG" alt="Mud"></a>
+                    <p class="caption">Mud</p>
+                </div>
+                <div class="album">
+                    <a id="link2" href="https://open.spotify.com/album/3PGcIK8hRE6bM3t9UmxcKK?si=VVGiesvzS1ePHoUYgjlugg"
+                        target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Costume Contest' });"><img
+                            src="images/covers/costumeContest.jpg" alt="Costume Contest"></a>
+                    <p class="caption">SPOOKY SONG</p>
+                </div>
+                <div class="album">
+                    <a id="link3" href="https://open.spotify.com/album/1c3ATXfc1pUXfEcm4tnGsw?si=NEj_UA43QDSBnpY6pLZJqw"
+                        target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Hole' });"><img
+                            src="images/covers/hole.jpg" alt="Hole"></a>
+                    <p class="caption">Hole</p>
+                </div>
+                <div class="album">
+                    <a id="link4" href="https://open.spotify.com/playlist/38b4h7FuXc930nPB4Yxqhu?si=ddddad36e10d4138"
+                        target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'This is Fez' });"><img id="img4"
+                            src="images/covers/thisisfez.JPG" alt="Fez Playlist"></a>
+                    <p class="caption" id="caption_four">THIS IS FEZ (PLAYLIST)</p>
                 </div>
             </div>
-        </div>
 
-        <a href="lyrics.html">
-            <div id="lyricspage">Lyrics Page</div>
-        </a>
-    </main>
+            <h2 id="full">FULL DISCOGRAPHY</h2>
 
-    <footer>
-        <p id="bookus">BOOK US: <a href="mailto:feztheband69@gmail.com" target="_blank">feztheband69@gmail.com</a></p>
-        <div class="logos">
-            <a href="https://www.instagram.com/fez.worldwide/" target="_blank" class="icon"><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@fez.worldwide" target="_blank" class="icon"><i
-                    class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/@feztheband69?app=desktop" target="_blank" class="icon"><i
-                    class="fa-brands fa-youtube"></i></a>
-            <a href="https://open.spotify.com/artist/4P3H6Mtpk64LrymsodCckT?si=sbOuXphOQcGWA_br4np-fg" target="_blank"
-                class="icon"><i class="fa-brands fa-spotify"></i></a>
-        </div>
-        <div class="footer-space"></div>
-    </footer>
+            <div class="discography-grid">
+                <div class="album">
+                    <a id="link5" href="https://open.spotify.com/album/1kEfsb0JKD0tT2mhHtrFCl?si=TbTeftEwR4OeEzIBxf9fmw"
+                        target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Fez After Dark' });"><img
+                            src="images/covers/afterDark.jpg" alt="After Dark"></a>
+                    <p class="caption">Fez After Dark</p>
+                </div>
+                <div class="album">
+                    <a id="link6" href="https://open.spotify.com/album/7ifFaE3y1LdojFFQ9yRwIj?si=r-tN_PHEQ6OMdNsp5gOHow"
+                        target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Mime Motoring' });"><img
+                            src="images/covers/mimeMotoring.jpg" alt="Mime Motoring"></a>
+                    <p class="caption">Mime Motoring</p>
+                </div>
+                <div class="album">
+                    <a id="link7" href="https://open.spotify.com/album/5VSjm4ng1YdC2n6Zlwgk2f?si=nbIboxwuQB2bjDey_bUwSA"
+                        target="_blank"
+                        onclick="fbq('trackCustom', 'AlbumClick', { album: 'This is the Summertime' });"><img
+                            src="images/covers/summerTime.jpg" alt="This is the Summertime"></a>
+                    <p class="caption">This is the Summertime</p>
+                </div>
+                <div class="album">
+                    <a id="link8" href="https://open.spotify.com/album/766cTckNCwhTFM7GbRBJkq?si=RsC4Qk1ESPmLOgyb9pfMpg"
+                        target="_blank" onclick="fbq('trackCustom', 'AlbumClick', { album: 'Glowing Ghouls' });"><img
+                            src="images/covers/GlowingGhouls.jpg" alt="fezman and the Glowing Ghouls"></a>
+                    <p class="caption">Fezman And The Glowing Ghouls</p>
+                </div>
+                <div class="album">
+                    <a id="link9" href="https://open.spotify.com/album/5VbnLwtDCwGsSD5SnMSvVA?si=xmb-sYlDQEqy3kb5_Z9f5g"
+                        target="_blank"><img src="images/covers/fezmas.jpg" alt="Fezmas"></a>
+                    <p class="caption">Paper People / Fezmas</p>
+                </div>
+                <div class="album">
+                    <a id="link10" href="https://open.spotify.com/album/4ZuqGYlylKdVJ1S76Nb61T?si=g7-mG8suT4qSY3HLawcqGQ"
+                        target="_blank"><img src="images/covers/mud.JPG" alt="Mud"></a>
+                    <p class="caption">Mud</p>
+                </div>
+                <div class="album">
+                    <a id="link11" href="https://open.spotify.com/album/3PGcIK8hRE6bM3t9UmxcKK?si=VVGiesvzS1ePHoUYgjlugg"
+                        target="_blank"><img src="images/covers/costumeContest.jpg" alt="Costume Contest"></a>
+                    <p class="caption">Abandoned at the Costume Contest</p>
+                </div>
+                <div class="album">
+                    <a id="link12" href="https://open.spotify.com/album/1c3ATXfc1pUXfEcm4tnGsw?si=NEj_UA43QDSBnpY6pLZJqw"
+                        target="_blank"><img src="images/covers/hole.jpg" alt="Hole"></a>
+                    <p class="caption">Hole / They're Alive</p>
+                </div>
+            </div>
+
+            <div class="fezimage">
+                <img src="images/dancingF.gif" alt="Dancing F">
+                <img src="images/dancingE.gif" alt="Dancing E">
+                <img src="images/dancing Z.gif" alt="Dancing Z">
+            </div>
+
+            <a href="lyrics.html">
+                <div id="lyricspage">Lyrics Page</div>
+            </a>
+        </main>
+
+        <footer>
+            <p id="bookus">BOOK US: <a href="mailto:feztheband69@gmail.com" target="_blank">feztheband69@gmail.com</a></p>
+            <div class="logos">
+                <a href="https://www.instagram.com/fez.worldwide/" target="_blank" class="icon"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@fez.worldwide" target="_blank" class="icon"><i
+                        class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@feztheband69?app=desktop" target="_blank" class="icon"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://open.spotify.com/artist/4P3H6Mtpk64LrymsodCckT?si=sbOuXphOQcGWA_br4np-fg" target="_blank"
+                    class="icon"><i class="fa-brands fa-spotify"></i></a>
+            </div>
+            <div class="footer-space"></div>
+        </footer>
+    </div>
 
     <script src="hamburger.js"></script>
 
