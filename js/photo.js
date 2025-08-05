@@ -89,8 +89,6 @@ function swipePhoto(dir) {
         index = photo_list.length - 1;
     }
 
-    console.log(index);
-
     displayPhoto(index);
 }
 
