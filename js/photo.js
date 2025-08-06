@@ -44,7 +44,7 @@ photo_list = [
         caption: "Fez guitar player reaches state of blur (2023)"
     },
     {
-        location: "images/picture_page/horror.jpg",
+        location: "images/picture_page/horror.JPG",
         caption: "Family photo in suspiciously red hallway (2024)"
     },
     {
@@ -64,7 +64,7 @@ photo_list = [
         caption: "Fez computer after an unfruitful recording session (2024)"
     },
     {
-        location: "images/picture_page/fezBass.jpg",
+        location: "images/picture_page/fezBass.JPG",
         caption: "Fez bass player plays mind melting lick (2023)"
     },
     {
