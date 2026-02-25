@@ -11,6 +11,10 @@
     font-style: normal;
 }
 
+html{
+    background-color: black;
+}
+
 body {
     background-image: url(../images/stars.gif);
     background-repeat: repeat;
