@@ -8,6 +8,11 @@ main{
     min-height: 100vh;
 }
 
+main h1{
+    padding-left: 5%;
+    font-size: 3em;
+}
+
 .main-container{
     display: flex;
     align-items: center;
@@ -63,6 +68,27 @@ button:hover{
     text-align: center;
     height: 30px;
 }
+
+.article-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.article-grid{
+    width: 300px;
+    height: 250px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.article-grid img:hover{
+    border: 7px solid gold;
+}
+
 
 @keyframes loadIn {
     0%{
